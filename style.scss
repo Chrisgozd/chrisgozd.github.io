@@ -15,10 +15,6 @@
 
 html {
   font-size: 16px;
-
-  @include mobile {
-    font-size: 9px;
-  }
 }
 
 body {
@@ -28,10 +24,14 @@ body {
 }
 
 .container {
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1000px;
-  margin: 15px auto;
+  margin: 0 auto;
+
+  @include mobile {
+    padding: 0 7.5px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,8 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,figure,.highlight {
+    margin-bottom: 1em;
+}
+
 h1 {
-  font-size: 185%;
+  font-size: 26px;
   margin: 0;
   a {
     color: inherit;
@@ -72,7 +76,6 @@ h4 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1em;
 }
 
 a {
@@ -85,8 +88,7 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin-left: 35px;
 }
 
 ul {
@@ -169,6 +171,7 @@ img {
 
   @include mobile {
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -220,27 +223,22 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
   font-family: $sourceSansPro;
   font-size: 110%;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
     display: block;
     font-size: 100%;
   }
 
   a {
-    margin-left: 20px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
-      margin: 0 10px;
       color: $blue;
     }
   }
@@ -289,8 +287,53 @@ nav {
 
 footer {
   padding: 20px 0;
-  text-align: center;
 }
+
+.site-footer {
+border-top: 1px solid #666;
+    padding: 15px 0;
+
+    .site-nav {
+      text-align: left;
+    }
+}
+
+.site-header {
+  padding: 15px 0;
+    min-height: 50px;
+    border-bottom: 1px solid #666;
+
+    @include mobile {
+          padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.site-nav {
+    border-radius: 4px;
+    font-size: 13px;
+    text-align: right;
+
+    @include mobile {
+        text-align: left;
+        font-size: 14px;
+    }
+
+.page-link {
+  line-height: 1.5;
+}
+
+.page-link:not(:first-child) {
+  margin-left: 20px;
+}
+}
+
+#main {
+  margin-top: 15px;
+}
+
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

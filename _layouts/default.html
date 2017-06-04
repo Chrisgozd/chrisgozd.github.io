@@ -15,7 +15,28 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
+        <header class="site-header">
+      <div class="container">
+        <a class="site-title" href="/">
+         <!--  <svg class="logo" viewBox="0 0 4 4">
+            <path fill="#000000" d="M0 0 h3 v1 h-2 v1 h1 v1 h-2 Z"></path>
+            <path fill="#60aaed" d="M3 0 h1 v1 h-1 Z"></path>
+            <path fill="#c0c4ca" d="M1 1 h2 v1 h-2 Z"></path>
+            <path fill="#0b4379" d="M3 1 h1 v3 h-1 Z"></path>
+            <path fill="#545861" d="M0 3 h2 v-1 h1 v2 h-3 Z"></path>
+          </svg> -->
+          Nick Craver<span class="site-subtitle">Software Imagineering</span>
+        </a>
+        <nav class="site-nav">
+            <a class="page-link" href="/">Home</a>
+            <a class="page-link active" href="/blog/">Blog</a>
+            <a class="page-link" href="/desktop-build/">Desktop</a>
+        </nav>    
+      </div>
+    </header>
+
+
+   <!--  <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
@@ -31,19 +52,22 @@
           </nav>
         </header>
       </div>
-    </div>
+    </div> -->
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
+<footer class="site-footer">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+        <nav class="site-nav">
+            <a class="page-link" href="/">Home</a>
+            <a class="page-link active" href="/blog/">Blog</a>
+            <a class="page-link" href="/desktop-build/">Desktop</a>
+        </nav>  
+          
       </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
   </body>
