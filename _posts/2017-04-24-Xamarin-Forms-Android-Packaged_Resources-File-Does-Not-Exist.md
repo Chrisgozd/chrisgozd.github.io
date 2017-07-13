@@ -20,7 +20,7 @@ Here is the solution that I found worked for me. (**Try solution #1 first to sav
 
 The file "obj\Debug\android\bin\packaged_resources" does not exist.
 
-![File packaged_resources does not exist]({{ site.url }}/images/file_packaged_resources_not_exist.png)
+[![File packaged_resources does not exist]({{ site.contenturl }}file_packaged_resources_not_exist.png)]({{ site.contenturl }}file_packaged_resources_not_exist.png)
 
 ### Solution #1 (Quick - Visual Studio won't redownload the zips, just decompress and unzip the current ones)
 

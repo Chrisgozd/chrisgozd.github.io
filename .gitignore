@@ -1,10 +1,7 @@
 _site
-.DS_Store
-.jekyll
-.jekyll-metadata
-.bundle
+_drafts
 .sass-cache
-Gemfile
-Gemfile.lock
-node_modules
-package.json
+Thumbs.db
+Desktop.ini
+.DS_Store
+.jekyll-metadata
