@@ -27,12 +27,17 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+        }, 400);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
             $('header, body').removeClass('active');
         }
+    });
+
+    $('.view-project').click(function(e) {
+        e.preventDefault();
+        console.log('click');
     });
 
     // Scroll to top

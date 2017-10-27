@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	uglify = require('gulp-uglify'),
 	sass = require('gulp-sass'),
-	wait = require('gulp-wait'),
 	rename = require('gulp-rename'),
 	minifyCSS = require('gulp-minify-css'),
 	autoprefixer = require('gulp-autoprefixer');
@@ -22,7 +21,6 @@ gulp.task('scripts', function() {
 
 gulp.task('styles', function () {
     return gulp.src('./scss/styles.scss')
-        .pipe(wait(250))
         .pipe(sass().on('error', sass.logError))
 		.pipe(minifyCSS({ keepSpecialComments: 0 }))
         .pipe(gulp.dest('./css'));

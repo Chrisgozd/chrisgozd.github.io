@@ -146,11 +146,14 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Pebbles of Hope</h3>
+                        <h3>Pebbles of Hope Mobile Application</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            The Pebbles of Hope organization focuses on equipping parents and other caregivers with the information and resources they need to care for the smallest babies in regions with few medical facilities. The application was published to the Android Google Play Store and the iOS iTunes App Store. Through the application, caregivers of preemiee babies can access videos and ask questions to Medical Professionals. 
                         </p>
-                        <a href="#">View Project</a>
+
+                        <a href="#" data-toggle="modal" data-target="#pebblesofhopeModal">
+                            View Project
+                        </a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -162,11 +165,13 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Tali Payments</h3>
+                        <h3>Tali Payments Mobile Application</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="#" data-toggle="modal" data-target="#taliPaymentsModal">
+                            View Project
+                        </a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -182,7 +187,9 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="#" data-toggle="modal" data-target="#steppingStoneNutritionModal">
+                            View Project
+                        </a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -198,7 +205,9 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="#" data-toggle="modal" data-target="#soundsOfTheNightModal">
+                            View Project
+                        </a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -207,39 +216,6 @@
         </div>
     </div>
     <!-- End #projects -->
-
-    <!-- <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
-    </div> -->
-    <!-- End #skills -->
 
     <div id="contact">
         <h2>Get in Touch</h2>
@@ -286,7 +262,113 @@
     </footer>
     <!-- End footer -->
 
+    <!-- Start Pebbles of Hope Project Modal -->
+    <div class="modal fade" id="pebblesofhopeModal" tabindex="-1" role="dialog" aria-labelledby="pebblesofhopeModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="pebblesofhopeModalLabel">Pebbles of Hope</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    <h4>Mobile Application</h4>
+                    <p>
+                        built using xamarin forms
+                        using google firebase for notifications
+                        uses: C# | Xamarin.Forms | Xamarin.Android (customizations) | Xamarin.IOS (customizations)
+                    </p>
+
+                    <h4>Deploying the Server</h4>
+                    <p>
+                        code is pushed to bitbucket, using bitbucket pipelines the code is pushed to docker hub
+                        newest docker image is then downloaded and deployed
+                        Deployed using Docker containers
+                        3 containers (nginx, api, mysql)
+                        https provided by lets encrypt
+                        mysql backed up on dropbox every night
+
+                        uses: Docker | Nginx | MySql | .Net Core
+                    </p>
+
+                    <h4>Api Server</h4>
+                    <p>
+                        using .net core
+                        google firebase to send notifications
+                        mysql
+                        Angular JS website for admins to manage the server
+
+                        uses: C# | .Net Core | MySql | Google Firebase | Javascript | HTML | Sass | CSS | Gulp | Angular.JS
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Pebbles of Hope Project Modal -->
+    
+    <!-- Start Tali Payments Project Modal -->
+    <div class="modal fade" id="taliPaymentsModal" tabindex="-1" role="dialog" aria-labelledby="taliPaymentsModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="taliPaymentsModalLabel">Tali Payments</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Developed the Android version of the client application.
+
+                        Fixed bugs on the server and iPad POS version of the application.
+
+                        Used: Xamarin.Android | Xamarin.iOS
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tali Payments Project Modal -->
+
+    <!-- Start Stepping Stone Nutrition Project Modal -->
+    <div class="modal fade" id="steppingStoneNutritionModal" tabindex="-1" role="dialog" aria-labelledby="steppingStoneNutritionModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="steppingStoneNutritionModalLabel">Stepping Stone Nutrition</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        stepping stone nutrition website was built using Jekyll and Github Pages.
+                        website is run through cloudflare for analytics, caching
+                        uses: Jekyll | Css | Sass | HTML | Javascript | JQuery
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Stepping Stone Nutrition Project Modal -->
+
+    <!-- Start Sounds of the Night Project Modal -->
+    <div class="modal fade" id="soundsOfTheNightModal" tabindex="-1" role="dialog" aria-labelledby="soundsOfTheNightModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="soundsOfTheNightModalLabel">Sounds of the Night</h4>
+                </div>
+                <div class="modal-body">
+                        sounds of the night website was built using Jekyll and Github Pages.
+                        website is run through cloudflare for analytics, caching
+                        uses: Jekyll | Css | Sass | HTML | Javascript | JQuery
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sounds of the Night Project Modal -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
