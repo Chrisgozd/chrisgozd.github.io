@@ -519,13 +519,13 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    color: $text;
 
     h2 {
         color: $heading;
     }
 
     p {
-        color: $text;
         margin: 0;
     }
 }
@@ -1100,10 +1100,16 @@ footer {
 .modal {
     color: $text;
 
+    .close {
+        position: relative;
+        z-index: 3;
+    }
+
     h3 {
         text-align: center;
         display: block;
         margin-bottom: 10px;
+        z-index: 2;
 
         &:after {
             position: absolute;
@@ -1131,6 +1137,26 @@ footer {
         font-size: .9em;
     }
 
+    ul.links {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 10px;
+        text-align: right;
+
+        &.float-right {
+            float: right;
+        }
+
+        li {
+            display: inline;
+            margin-left: 25px;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+    }
+
     ul.skills-used {
         padding-left: 0;
         padding-top: 10px;
@@ -1148,5 +1174,9 @@ footer {
             background: #e4e4ea;
             margin: 3px;
         }
+    }
+
+    img {
+        width: 100%;
     }
 }
