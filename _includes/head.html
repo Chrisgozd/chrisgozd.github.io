@@ -1,0 +1,21 @@
+<head>
+    {% include analytics.html %}
+    
+    <!-- Styles -->
+    {% capture styles %}{% include styles.scss %}{% endcapture %}
+
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+          {{ styles | scssify }}
+    </style>
+  
+    <title>{{site.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo title=false %}
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  
