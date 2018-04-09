@@ -175,110 +175,61 @@ layout: default
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/pebblesofhope.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Pebbles of Hope Mobile Application</h3>
-                        <p>
-                            The Pebbles of Hope organization focuses on equipping parents and other caregivers with the information and resources they
-                            need to care for the smallest babies in regions with few medical facilities. The application
-                            was published to the Android Google Play Store and the iOS iTunes App Store. Through the application,
-                            caregivers of preemie babies can access videos and ask questions to Medical Professionals.
-                        </p>
+                
+                {% include 
+                    project.html 
+                    image="images/pebblesofhope.png"
+                    title="Pebbles of Hope Mobile Application"
+                    dataTarget="#pebblesofhopeModal"
+                    content="The Pebbles of Hope organization focuses on equipping parents and other caregivers with the information and resources they
+                             need to care for the smallest babies in regions with few medical facilities. The application
+                             was published to the Android Google Play Store and the iOS iTunes App Store. Through the application,
+                             caregivers of preemie babies can access videos and ask questions to Medical Professionals." 
+                %}
 
-                        <a href="#" data-toggle="modal" data-target="#pebblesofhopeModal">
-                            View Project
-                        </a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                {% include 
+                    project.html 
+                    image="images/talipayments.png"
+                    title="Tali Payments Mobile Application"
+                    dataTarget="#taliPaymentsModal"
+                    content="Tali Payments is a cloud-based mobile payment platform for restaurants. It allows customers to view menus and order food
+                    from their phones and skip long queues at restaurants. It also allows businesses to increase
+                    revenue, expand their market, and easily manage customer transactions. A client application was
+                    developed and published to the Android Google Play Store and the iOS iTunes App Store. An iPad
+                    application was also developed for restaurant managers to manage and view orders." 
+                %}        
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/talipayments.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Tali Payments Mobile Application</h3>
-                        <p>
-                            Tali Payments is a cloud-based mobile payment platform for restaurants. It allows customers to view menus and order food
-                            from their phones and skip long queues at restaurants. It also allows businesses to increase
-                            revenue, expand their market, and easily manage customer transactions. A client application was
-                            developed and published to the Android Google Play Store and the iOS iTunes App Store. An iPad
-                            application was also developed for restaurant managers to manage and view orders.
-                        </p>
-                        <a href="#" data-toggle="modal" data-target="#taliPaymentsModal">
-                            View Project
-                        </a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                {% include 
+                    project.html 
+                    image="images/steppingstonenutrition.png"
+                    title="Stepping Stone Nutrition"
+                    dataTarget="#steppingStoneNutritionModal"
+                    content="Stepping Stone Nutrition, LLC provides nutrition, lactation, and wellness counseling to both individuals and businesses in
+                    Wisconsin. The website allows users to view information about Stepping Stone Nutrition such as
+                    biographies of staff, pricing, and services. The website also allows users to directly contact
+                    Stepping Stone Nutrition." 
+                %} 
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/steppingstonenutrition.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Stepping Stone Nutrition</h3>
-                        <p>
-                            Stepping Stone Nutrition, LLC provides nutrition, lactation, and wellness counseling to both individuals and businesses in
-                            Wisconsin. The website allows users to view information about Stepping Stone Nutrition such as
-                            biographies of staff, pricing, and services. The website also allows users to directly contact
-                            Stepping Stone Nutrition.
-                        </p>
-                        <a href="#" data-toggle="modal" data-target="#steppingStoneNutritionModal">
-                            View Project
-                        </a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                {% include 
+                    project.html 
+                    image="images/soundsofthenight.png"
+                    title="Sounds of the Night"
+                    dataTarget="#soundsOfTheNightModal"
+                    content="Sounds of the Night provides professional DJ servicing for Weddings, Birthdays, and events in Milwaukee, Wisconsin. The website
+                    allows users to view information about Sounds of the Night such as biographies of staff, pricing,
+                    and services offered. The website also allows users to directly contact Sounds of the Night." 
+                %}
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/soundsofthenight.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Sounds of the Night</h3>
-                        <p>
-                            Sounds of the Night provides professional DJ servicing for Weddings, Birthdays, and events in Milwaukee, Wisconsin. The website
-                            allows users to view information about Sounds of the Night such as biographies of staff, pricing,
-                            and services offered. The website also allows users to directly contact Sounds of the Night.
-                        </p>
-                        <a href="#" data-toggle="modal" data-target="#soundsOfTheNightModal">
-                            View Project
-                        </a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                {% include 
+                    project.html 
+                    image="images/seniordesign.png"
+                    title="Senior Design - Test Site Management Tool"
+                    dataTarget="#seniorDesignModal"
+                    content="Test Site Management Tool helps software release managers schedule and survey customer site visits to test new software releases.
+                    The website allows managers to create and send online applications for new customer sites, add
+                    comments, view history and manage authorization of users on the website." 
+                %}
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/seniordesign.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Senior Design - Test Site Management Tool</h3>
-                        <p>
-                            Test Site Management Tool helps software release managers schedule and survey customer site visits to test new software releases.
-                            The website allows managers to create and send online applications for new customer sites, add
-                            comments, view history and manage authorization of users on the website.
-                        </p>
-                        <a href="#" data-toggle="modal" data-target="#seniorDesignModal">
-                            View Project
-                        </a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
             </div>
         </div>
     </div>
