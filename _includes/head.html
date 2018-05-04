@@ -11,7 +11,20 @@
           {{ styles | scssify }}
     </style>
   
+  <!-- Loading double css on blog page -->
+    {% if page.url contains "blog" %}
+      <link rel="stylesheet" href="{{ "/blog/assets/main.css" | relative_url }}">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    {% endif %}
+
     <title>{{site.title}}</title>
+
+    <!-- {% if page.title == "Home" %}
+          {{ site.title }}
+        {% else %}
+          {{ page.title }} &middot; {{ site.title }}
+        {% endif %} -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo title=false %}
   

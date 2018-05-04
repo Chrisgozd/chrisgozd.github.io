@@ -20,8 +20,9 @@ plugins:
   - jekyll-paginate
 
 # Permalinks
-permalink:      /:year-:month-:day/:title
+permalink:      /blog/:year-:month-:day/:title
 paginate:       5
+paginate_path: "/blog/page:num/"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
