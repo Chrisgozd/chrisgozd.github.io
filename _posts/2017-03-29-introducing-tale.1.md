@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setup GitHub Pages and Namecheap with Email Forwarding and HTTPS"
+title:  "I wrote an"
 author: "Christopher"
 ---
 

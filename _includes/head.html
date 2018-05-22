@@ -1,19 +1,23 @@
 <head>
     {% include analytics.html %}
-    
-    <!-- Styles -->
-    {% capture styles %}{% include styles.scss %}{% endcapture %}
 
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- if main page -->
+    {% unless page.url contains "blog" %}
+      {% capture maincss %}{% include main.scss %}{% endcapture %}
+      <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-          {{ styles | scssify }}
-    </style>
+      <style>
+            {{ maincss | scssify }}
+      </style>
+    {% endunless %}
   
-  <!-- Loading double css on blog page -->
+    <!-- if blog -->
     {% if page.url contains "blog" %}
-      <link rel="stylesheet" href="{{ "/blog/assets/main.css" | relative_url }}">
+      {% capture blogcss %}{% include blog.scss %}{% endcapture %}
+      <style>
+          {{ blogcss | scssify }}
+      </style>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
     {% endif %}
 
@@ -29,6 +33,6 @@
     {% seo title=false %}
   
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
   </head>
   

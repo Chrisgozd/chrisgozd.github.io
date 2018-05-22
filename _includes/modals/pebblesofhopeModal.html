@@ -1,0 +1,98 @@
+<!-- Start Pebbles of Hope Project Modal -->
+<div class="modal fade" id="pebblesofhopeModal" tabindex="-1" role="dialog" aria-labelledby="pebblesofhopeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="heading modal-title" id="pebblesofhopeModalLabel">Pebbles of Hope</h3>
+            </div>
+            <div class="modal-body">
+                <ul class="links float-right">
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.pebblesofhope.android&hl=en" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>Google Play Store</a>
+                    </li>
+                    <li>
+                        <a href="https://itunes.apple.com/us/app/pebbles-of-hope/id994693057?mt=8" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>iOS App Store</a>
+                    </li>
+                    <li>
+                        <a href="mailto:chris@christophergozdziewski.com" target="_blank">
+                            <i class="fa fa-link" aria-hidden="true"></i>Request code</a>
+                    </li>
+                </ul>
+                <h4>Mobile Application</h4>
+
+                <ul>
+                    <li>Built using Xamarin.Forms which creates a native UI for iOS, Android, and Windows phone using a single,
+                        shared C# codebase.</li>
+                    <li>Communicates with a .NET Core Web Api and smartly caches responses using Akavache to provide an optimal
+                        user experience.</li>
+                    <li>Integrates with the YouTube Api to show instructional videos in-app.</li>
+                    <li>Allows users to ask questions and send images to Medical Professionals right from their phones.</li>
+                    <li>Provides real time messaging capabilities with Medical Professionals using Firebase Cloud Messaging.</li>
+                </ul>
+
+
+                <ul class="skills-used">
+                    <li>C#</li>
+                    <li>Xamarin.Forms</li>
+                    <li>Firebase Cloud Messaging</li>
+                </ul>
+
+                <ul class="links float-right">
+                    <li>
+                        <a href="mailto:chris@christophergozdziewski.com" target="_blank">
+                            <i class="fa fa-link" aria-hidden="true"></i>Request code</a>
+                    </li>
+                </ul>
+
+                <h4>Api Server</h4>
+                <ul>
+                    <li>Built using C# .NET Core to create a Restful Web Api to communicate with the mobile application.</li>
+                    <li>Sends real time updates using Firebase Cloud Messaging.</li>
+                    <li>Stores and retrieves user profiles and questions from MySQL.</li>
+                    <li>Smartly caches database responses using Redis.</li>
+                    <li>Provides an admin website built with AngularJS for management of Medical Professional user approval.</li>
+                </ul>
+
+                <ul class="skills-used">
+                    <li>C#</li>
+                    <li>.NET Core</li>
+                    <li>MySQL</li>
+                    <li>Redis</li>
+                    <li>Firebase Cloud Messaging</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>Sass</li>
+                    <li>CSS</li>
+                    <li>Gulp</li>
+                    <li>AngularJS</li>
+                </ul>
+
+                <h4>Deploying the Server</h4>
+                <ol>
+                    <li>Restful Web Api code is pushed to Bitbucket.</li>
+                    <li>Using Bitbucket Pipelines, a Docker image is created and pushed to Docker Hub.</li>
+                    <li>Server is notified of a new Docker image and server code is updated.</li>
+                </ol>
+                <ul>
+                    <li>Server is maintained and updated using Docker containers.</li>
+                    <li>Https is provided and renewed automatically by Let's Encrypt.</li>
+                    <li>MySQL database is backed up on Dropbox nightly.</li>
+                </ul>
+                <ul class="skills-used">
+                    <li>Docker</li>
+                    <li>Nginx</li>
+                    <li>MySQL</li>
+                    <li>.NET Core</li>
+                </ul>
+
+                <img src="images/pebblesofhope-banner.png" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Pebbles of Hope Project Modal -->
